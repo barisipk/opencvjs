@@ -85,7 +85,7 @@
             function processVideo() {
                 var utils = new Utils('');
                 var model =
-                    "https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_default.xml"
+                    "haarcascade_frontalface_default.xml"
                 utils.createFileFromUrl('haarcascade_frontalface_default.xml', model, () => {
                         document.getElementById('status').innerHTML = 'Downloading haarcascade_frontalface_default';});
                         if (!classifier.load(model)) {
